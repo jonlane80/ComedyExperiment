@@ -118,7 +118,7 @@
                     // var w = window.open("");   
                     // w.document.write(img.innerHTML);
                     var largeImage = window.open(canvas.toDataURL("image/png"), 'Large Image')
-                    largeImage.document.title = "Large Size Image";
+                    largeImage.document.write ('<title>Large Size Image</title>');
                 }).catch (error => console.log("Error: " + error));
 
                 html2canvas(document.querySelector(".poster"),
@@ -140,7 +140,7 @@
                     // var w = window.open("");   
                     // w.document.write(img.innerHTML);
                     var smallImage = window.open(canvas.toDataURL("image/png"), 'Small Image')
-                    smallImage.document.title = "Small Size Image";
+                    smallImage.document.write ('<title>Small Size Image</title>');
                 }).catch (error => console.log("Error: " + error));
             };
         </script>
