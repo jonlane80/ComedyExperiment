@@ -117,7 +117,8 @@
                     // window.location.href = image;        
                     // var w = window.open("");   
                     // w.document.write(img.innerHTML);
-                    window.open(canvas.toDataURL("image/png"), 'Large Image')
+                    var largeImage = window.open(canvas.toDataURL("image/png"), 'Large Image')
+                    largeImage.document.title = "Large Size Image";
                 }).catch (error => console.log("Error: " + error));
 
                 html2canvas(document.querySelector(".poster"),
@@ -138,7 +139,8 @@
                     // window.location.href = image;        
                     // var w = window.open("");   
                     // w.document.write(img.innerHTML);
-                    window.open(canvas.toDataURL("image/png"), 'Small Image')
+                    var smallImage = window.open(canvas.toDataURL("image/png"), 'Small Image')
+                    smallImage.document.title = "Small Size Image";
                 }).catch (error => console.log("Error: " + error));
             };
         </script>
