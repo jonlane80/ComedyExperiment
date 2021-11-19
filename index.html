@@ -113,13 +113,32 @@
                         // height: 11000,
                     }).then(canvas => {
                     // document.body.appendChild(canvas)
-                    var img = new Image();
-                    img.crossOrigin = "";
-                    img.src = canvas.toDataURL("image/png"); //.replace("image/png", "image/octet-stream");
+                    // img.src = canvas.toDataURL("image/png"); //.replace("image/png", "image/octet-stream");
                     // window.location.href = image;        
                     // var w = window.open("");   
                     // w.document.write(img.innerHTML);
-                    window.open(img.src, 'Image')
+                    window.open(canvas.toDataURL("image/png"), 'Large Image')
+                }).catch (error => console.log("Error: " + error));
+
+                html2canvas(document.querySelector(".poster"),
+                    {
+                        allowTaint: false,
+                        windowWidth: 1000,
+                        windowHeight: 1000,
+                        scrollX: -window.scrollX,
+                        scrollY: -window.scrollY,
+                        // useCORS: true,
+                        // width: 8000,
+                        // height: 11000,
+                    }).then(canvas => {
+                    // document.body.appendChild(canvas)
+                    // var imgsmall = new Image();
+                    // img.crossOrigin = "";
+                    // img.src = canvas.toDataURL("image/png"); //.replace("image/png", "image/octet-stream");
+                    // window.location.href = image;        
+                    // var w = window.open("");   
+                    // w.document.write(img.innerHTML);
+                    window.open(canvas.toDataURL("image/png"), 'Small Image')
                 }).catch (error => console.log("Error: " + error));
             };
         </script>
