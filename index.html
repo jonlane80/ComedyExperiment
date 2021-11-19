@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="poster.css">
+        <title>The Comedy Experiement</title>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="scripts/kjua-master/dist/kjua.min.js"></script>
+        <script src="scripts/html2canvas.min.js"></script>
+
+        <div id="capture"></div>
+        <input id="export" type="button" value="export" />
+
+        <!-- Perfomer images are circles 874 x 807 -->
+        <div class="poster">
+            <div class="banner">
+                <div class="banner-wrapper">
+                    <img class="banner-img" src="FullLogoWhitebackground.jpg" alt="The Comedy Experiment logo showing test tubes and pipes"/>
+                </div>
+                <div class="logo-wrapper">
+                    <img class="logo-img" src="logoWithText.png"/>
+                </div>
+            </div>
+            <div class="poster-body">
+                <div class="act1 acts">
+                    <div class="vertical-align"></div>
+                    <img class="pink-flask flask" src="pink_flask.png"/>
+                    <img class="performer performer1" src="performer1.png"/>
+                    <div class="act-text-block">
+                        <div class="act-type act-text">Headliner</div>
+                        <div class="act-name act-text">Maff Brown</div>
+                        <div class="act-description act-text">As seen on the BBC's QI, The Apprentice: you're fired and so on</div>
+                    </div>
+                    <div class="show-info">
+                        <div class="free-entry">Free Entry</div>
+                        <div class="over-18s">over 18s only</div>
+                    </div>
+                </div>
+                <div class="act2 acts">
+                    <span class="vertical-align"></span>
+                    <img class="pink-flask flask" src="blue_flask.png"/>
+                    <img class="performer performer2" src="performer2.png"/>
+                    <div class="act-text-block">
+                        <div class="act-type act-text">Host</div>
+                        <div class="act-name act-text">Martin Something</div>
+                        <div class="act-description act-text">The Comedy Experiments own resident MC will show his stuff for the evening or something</div>
+                    </div>
+                    <div class="show-date show-info">
+                        <div class="show-day">Saturday</div>
+                        <div class="perf-date">9th October '21</div>
+                        <div class="doors-open">Doors open at 15:45</div>
+                        <div class="show-starts">Show starts at 16:00</div>
+                    </div>
+                </div>
+                <div class="acts act3">
+                    <span class="vertical-align"></span>
+                    <img class="yellow-flask flask" src="yellow_flask.png"/>
+                    <img class="performer performer3" src="performer3.png" />
+                    <div class="act-text-block">
+                        <div class="act-type act-text">Opening</div>
+                        <div class="act-name act-text">Someone Else</div>
+                        <div class="act-description act-text">He's done everything you know even that thing you liked</div>
+                    </div>
+                    <div class="show-address show-info">
+                        <div class="addr-line">Caroline of Brunswick</div>
+                        <div class="addr-line">39 Ditchling Road</div>
+                        <div class="addr-line">Brighton</div>
+                        <div class="addr-line last-addr-line">BN1 4SB</div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="qrcodeCanvas" origin-clean="true"></div>
+                    <div class="ticket-link">
+                        Tickets from: <a href=https://thecomedyexperimentnov.eventbrite.co.uk>https://thecomedyexperimentnov.eventbrite.co.uk</a>
+                    </div>
+                </div>
+            </div>
+            <img id="qr-logo" class="qr-logo" src="logoWithText.png"/>
+        </div>
+        <script>
+            jQuery(".qrcodeCanvas").kjua({
+                text: "https://thecomedyexperimentnov.eventbrite.co.uk",
+                // mode: 'image',
+                // image: document.getElementById("qr-logo"),
+                // mSize: 20,
+                render: 'image',
+                size: 1200,
+                // size: 50,
+                // render: "svg",
+
+            });	
+        </script>
+        <script>
+            // var svgElements = document.body.querySelectorAll('svg');
+            // svgElements.forEach(function(item) {
+            //     item.setAttribute("width", item.getBoundingClientRect().width);
+            //     item.setAttribute("height", item.getBoundingClientRect().height);
+            //     item.style.width = null;
+            //     item.style.height= null;
+            // });
+            document.getElementById("export").onclick = function () { 
+                html2canvas(document.querySelector(".poster"),
+                    {
+                        allowTaint: false,
+                        windowWidth: 7000,
+                        windowHeight: 10000,
+                        // useCORS: true,
+                        // width: 8000,
+                        // height: 11000,
+                    }).then(canvas => {
+                    // document.body.appendChild(canvas)
+                    var img = new Image();
+                    img.crossOrigin = "";
+                    img = canvas.toDataURL("image/png"); //.replace("image/png", "image/octet-stream");
+                    // window.location.href = image;        
+                    var w = window.open("");   
+                    w.document.write(img.innerHTML);
+                }).catch (error => console.log("Error: " + error));
+            };
+        </script>
+    </body>
+</html>

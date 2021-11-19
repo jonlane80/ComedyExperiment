@@ -1,0 +1,271 @@
+html, body {
+    margin:0px;
+    /* width: 8000px;
+    height: 11000px; */
+    height: 100%;
+    width: 100%;
+  }
+.poster {
+    height: 100%;
+    object-fit: contain;
+    display: inline-block;
+    position: relative;
+    left: 50%; 
+    transform: translate(-50%, -0%);
+}
+
+.banner {
+    top: 0;
+    left: 0;
+    height: 22%;
+    max-height: 23%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    object-fit: contain;
+  }
+
+.banner-wrapper {
+    position: relative;
+    height: 100%;
+    float: left;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.banner-img {
+    position: relative;
+    object-fit: contain;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    opacity: 0.5;
+    margin-top: 2%;
+}
+.logo-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    float: left;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+.logo-img{
+    top: 0;
+    height: auto;
+    width: auto;
+    display: block;
+    margin-top: 1%;
+    max-height: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+  
+  .act1 {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,245,175,1) 0%, rgba(255,194,0,1) 100%); 
+  }
+  .act2 {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(250,152,184,1) 0%, rgba(190,22,78,1) 100%); 
+  }
+  .act3 {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(195,236,255,1) 0%, rgba(129,214,252,1) 100%); 
+    /* height: 25%; */
+  }
+  .footer {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(195,236,255,1) 0%, rgba(129,214,252,1) 100%); 
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .acts {
+    height: 13%;
+    clear: both;
+    position: relative; 
+    width: 100%;
+    max-width: 100%;
+    flex-grow: 1;
+    width: 0;
+    break-after: always;
+  }
+
+  .vertical-align {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .performer {
+    position: absolute;
+    max-height: 9vh;
+    transform: translate(-130%, 20%);
+  }
+
+  .flask {
+    position: relative;
+    margin-left: 5%;
+    display: inline-block;
+    object-fit: contain;
+    max-height: 90%;
+    vertical-align: middle;
+    max-width: 25%;
+  }
+
+  .poster-body {
+    max-width: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    object-fit: contain;
+  }
+
+  .act-type {
+    font-size: 4vmin;
+    margin-top: 1vh;
+    font-weight: bolder;
+  }
+
+  .act-name {
+    font-size: 3vmin;
+    margin-top: 1vh;
+    font-weight: bold;
+  }
+
+  .act-description {
+    font-size: 2vmin;
+    margin-top: 0.5vh;
+    margin-bottom: 0.2vh;
+  }
+  .act-text {
+    max-width: 100%;
+  }
+
+  .act-text-block {
+    position: relative;
+    display: inline-block;
+    margin-left: 2vh;
+    vertical-align: top;
+    max-width: 35%;
+    clear: both;
+  }
+  
+  .show-info {
+    border-color: black;
+    border-width: 0.7vh;
+    border-style: solid;
+    float: right;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 3%;
+    margin-right: 2%;
+    height: 60%;
+  }
+
+  .free-entry {
+    margin-top: 1vh;
+    /* font-size: clamp(30px, 2vw, 65px); */
+    font-size: 2vh;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .over-18s {
+    margin-top: 3%;
+    /* font-size: clamp(15px, 1vw, 40px); */
+    font-size: 1vh;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+
+  .show-day {
+    margin-top: 0.5vh;
+    margin-left: 3%;
+    /* font-size: clamp(30px, 2vw, 65px); */
+    font-size: 2vh;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .perf-date {
+    margin-top: 1%;
+    /* font-size: clamp(25px, 1.7vw, 60px); */
+    font-size: 1.7vh;
+    margin-left: 3%;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .doors-open {
+    /* font-size: clamp(15px, 1vw, 40px); */
+    font-size: 1vh;
+    text-align: left;
+    margin-left: 3%;
+  }
+
+  .show-starts {
+    /* font-size: clamp(15px, 1vw, 40px); */
+    font-size: 1vh;
+    text-align: left;
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
+
+  .addr-line {
+    margin-top: 2%;
+    /* font-size: clamp(25px, 1.5vw, 40px); */
+    font-size: 1.1vh;
+    margin-left: 3%;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .last-addr-line {
+    margin-bottom: 3%;
+  }
+
+  .qr-logo {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .qrcodeCanvas {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+  }
+  .qrcodeCanvas img {
+    max-height: 8vh;
+    max-width: 8vh;
+    /* max-height: 10%; */
+    left: 50%;
+    transform: translate(-50%, -40%);
+    break-after: always;
+    position: absolute;
+    display: inline-block;
+    object-fit: contain;
+  }
+
+
+  .ticket-link {
+    max-width: 100%;
+    flex-grow: 1;
+    width: 100%;
+    break-after: always;
+    max-width: 100%;
+    flex-grow: 1;
+    margin-bottom: 3%;
+    justify-content: center;
+    display: flex;
+    font-size: 2vh;
+    margin-top: auto;
+  }
