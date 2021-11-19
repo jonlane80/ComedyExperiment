@@ -115,8 +115,9 @@
                     img.crossOrigin = "";
                     img.src = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
                     // window.location.href = image;        
-                    var w = window.open("");   
-                    w.document.write(img.innerHTML);
+                    // var w = window.open("");   
+                    // w.document.write(img.innerHTML);
+                    window.open(img.src, 'Image')
                 }).catch (error => console.log("Error: " + error));
             };
         </script>
