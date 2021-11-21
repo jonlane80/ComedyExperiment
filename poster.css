@@ -4,6 +4,9 @@ html, body {
     height: 11000px; */
     height: 100%;
     width: 100%;
+    font-family: heisei-maru-gothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 800;
   }
 .poster {
     height: 100%;
@@ -218,6 +221,9 @@ html, body {
   .addr-line {
     margin-top: 2%;
     /* font-size: clamp(25px, 1.5vw, 40px); */
+    font-family: heisei-maru-gothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 800;
     font-size: 1.1vh;
     margin-left: 3%;
     font-weight: bold;
