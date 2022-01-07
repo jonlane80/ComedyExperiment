@@ -1,11 +1,9 @@
 html, body {
     margin:0px;
-    /* width: 8000px;
-    height: 11000px; */
     height: 100%;
     width: 100%;
     font-family: heisei-maru-gothic-std, sans-serif;
-    font-style: normal;
+    font-style: bold;
     font-weight: 800;
   }
 .poster {
@@ -104,13 +102,21 @@ html, body {
 
   .performer {
     position: absolute;
+    max-height: 9.5vh;
+    transform: translate(-130%, 30%);
+  }
+
+  .performer2 {
+    position: absolute;
     max-height: 9vh;
-    transform: translate(-130%, 20%);
+    transform: translate(-140%, 30%);
   }
 
   .flask {
     position: relative;
-    margin-left: 5%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     display: inline-block;
     object-fit: contain;
     max-height: 90%;
@@ -128,21 +134,21 @@ html, body {
   }
 
   .act-type {
-    font-size: 4vmin;
-    margin-top: 1vh;
+    font-size: 3.5vmin;
+    margin-top: 0.3vh;
     font-weight: bolder;
   }
 
   .act-name {
     font-size: 3vmin;
-    margin-top: 1vh;
+    margin-top: 0vh;
     font-weight: bold;
   }
 
   .act-description {
-    font-size: 2vmin;
-    margin-top: 0.5vh;
-    margin-bottom: 0.2vh;
+    font-size: 1.2vmin;
+    margin-top: 0vh;
+    margin-bottom: 0.5vh;
   }
   .act-text {
     max-width: 100%;
@@ -172,7 +178,7 @@ html, body {
   .free-entry {
     margin-top: 1vh;
     /* font-size: clamp(30px, 2vw, 65px); */
-    font-size: 2vh;
+    font-size: 2.1vh;
     font-weight: bold;
     text-align: center;
   }
@@ -180,7 +186,7 @@ html, body {
   .over-18s {
     margin-top: 3%;
     /* font-size: clamp(15px, 1vw, 40px); */
-    font-size: 1vh;
+    font-size: 1.5vh;
     text-align: center;
     margin-bottom: 3%;
   }
@@ -197,7 +203,7 @@ html, body {
   .perf-date {
     margin-top: 1%;
     /* font-size: clamp(25px, 1.7vw, 60px); */
-    font-size: 1.7vh;
+    font-size: 1.3vh;
     margin-left: 3%;
     font-weight: bold;
     text-align: left;
@@ -220,11 +226,7 @@ html, body {
 
   .addr-line {
     margin-top: 2%;
-    /* font-size: clamp(25px, 1.5vw, 40px); */
-    font-family: heisei-maru-gothic-std, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.1vh;
+    font-size: 1vh;
     margin-left: 3%;
     font-weight: bold;
     text-align: left;
@@ -254,7 +256,7 @@ html, body {
     max-width: 8vh;
     /* max-height: 10%; */
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -60%);
     break-after: always;
     position: absolute;
     display: inline-block;
@@ -272,6 +274,6 @@ html, body {
     margin-bottom: 3%;
     justify-content: center;
     display: flex;
-    font-size: 2vh;
+    font-size: 1.5vh;
     margin-top: auto;
   }
