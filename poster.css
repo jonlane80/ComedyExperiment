@@ -5,7 +5,7 @@ html, body {
     font-family: heisei-maru-gothic-std, sans-serif;
     font-style: bold;
     font-weight: 800;
-    line-height: 1;
+    /* line-height: 1; */
   }
 .poster {
     height: 100%;
@@ -145,12 +145,12 @@ html, body {
     font-size: 3vmin;
     margin-top: 0vh;
     font-weight: bold;
-    line-height: 1;
+    line-height: 0.6;
   }
 
   .act-description {
     font-size: 1.2vmin;
-    margin-top: 0vh;
+    margin-top: 1vh;
     margin-bottom: 0.5vh;
     line-height: 1;
   }
