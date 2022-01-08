@@ -73,18 +73,21 @@
                 <div class="footer">
                     <div class="qrcodeCanvas" origin-clean="true"></div>
                     <div class="ticket-link">
-                        Tickets from: <a href=https://thecomedyexperimentjn.eventbrite.co.uk>https://thecomedyexperimentjn.eventbrite.co.uk</a>
+                        Tickets from: <a id="ticket-link" href="foo">bar</a>
                     </div>
                 </div>
             </div>
         </div>
         <script>
+            var ticketLink = "https://thecomedyexperimentjn.eventbrite.co.uk"
             jQuery(".qrcodeCanvas").kjua({
-                text: "https://thecomedyexperimentjn.eventbrite.co.uk",
+                text: ticketLink,
                 render: 'image',
                 size: 1200,
-
             });	
+            var link = document.getElementById('ticket-link'); 
+            link.href = ticketLink
+            link.text = ticketLink
         </script>
         <script>
             document.getElementById("export").onclick = function () { 
