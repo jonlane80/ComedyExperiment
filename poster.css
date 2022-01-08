@@ -92,6 +92,7 @@ html, body {
     flex-grow: 1;
     width: 0;
     break-after: always;
+    flex-basis: 100%;
   }
 
   .vertical-align {
