@@ -7,6 +7,10 @@ html, body {
     font-weight: 800;
     /* line-height: 1; */
   }
+
+.wrapper {
+  opacity: 0;
+}
 .poster {
     height: 100%;
     object-fit: contain;
