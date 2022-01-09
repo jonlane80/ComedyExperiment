@@ -11,7 +11,8 @@
         <script src="scripts/html2canvas.min.js"></script>
 
         <div id="capture"></div>
-        <input id="export" type="button" value="export" />
+        <input id="Large Poster" type="button" value="largePoster" />
+        <input id="Small Poster" type="button" value="smallPoster" />
 
         <!-- Perfomer images are circles 874 x 807 -->
         <div class="poster">
@@ -90,7 +91,7 @@
             link.text = ticketLink
         </script>
         <script>
-            document.getElementById("export").onclick = function () { 
+            document.getElementById("largePoster").onclick = function () { 
                 html2canvas(document.querySelector(".poster"),
                     {
                         allowTaint: false,
@@ -102,7 +103,12 @@
                     var largeImageUrl = canvas.toDataURL("image/png")
                     var largeImage = window.open(largeImageUrl, "Large Poster")
                     largeImage.document.write ('<title>Large Size Image</title><img src=' + largeImageUrl + ' alt="large poster">' );
-                    html2canvas(document.querySelector(".poster"),
+                }).catch (error => console.log("Error: " + error));
+            };
+        </script>
+        <script>
+            document.getElementById("smallPoster").onclick = function () { 
+                html2canvas(document.querySelector(".poster"),
                     {
                         allowTaint: false,
                         windowWidth: 1000,
@@ -113,7 +119,6 @@
                     var smallImageUrl = canvas.toDataURL("image/png")
                     var smallImage = window.open(smallImageUrl, "Small Poster")
                     smallImage.document.write ('<title>Small Size Image</title><img src=' + smallImageUrl + ' alt="small poster">' );
-                }).catch (error => console.log("Error: " + error));
                 }).catch (error => console.log("Error: " + error));
             };
         </script>
