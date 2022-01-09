@@ -101,9 +101,7 @@
                     }).then(canvas => {
                     var largeImage = window.open()
                     largeImage.document.write ('<title>Large Size Image</title><img src=' + canvas.toDataURL("image/png")+ ' alt="large poster">' );
-                }).catch (error => console.log("Error: " + error));
-
-                html2canvas(document.querySelector(".poster"),
+                    html2canvas(document.querySelector(".poster"),
                     {
                         allowTaint: false,
                         windowWidth: 1000,
@@ -113,6 +111,7 @@
                     }).then(canvas => {
                     var smallImage = window.open()
                     smallImage.document.write ('<title>Small Size Image</title><img src=' + canvas.toDataURL("image/png")+ ' alt="small poster">' );
+                }).catch (error => console.log("Error: " + error));
                 }).catch (error => console.log("Error: " + error));
             };
         </script>
