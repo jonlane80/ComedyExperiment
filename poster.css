@@ -262,7 +262,8 @@ html, body {
     display: flex;
     justify-content: center;
   }
-  .qrcodeCanvas img {
+  
+  /* .qrcodeCanvas img {
     max-height: 8vh;
     max-width: 8vh;
     /* max-height: 10%; */
@@ -272,7 +273,7 @@ html, body {
     position: absolute;
     display: inline-block;
     object-fit: contain;
-  }
+  } */
 
 
   .ticket-link {
