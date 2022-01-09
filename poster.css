@@ -1,3 +1,6 @@
+p, menu, ol, hr, figure, dl, blockquote, ul, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0
+}
 html, body {
     margin:0px;
     height: 100%;
@@ -8,9 +11,6 @@ html, body {
     /* line-height: 1; */
   }
 
-.wrapper {
-  opacity: 0;
-}
 .poster {
     height: 100%;
     object-fit: contain;
