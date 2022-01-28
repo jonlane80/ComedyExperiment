@@ -106,7 +106,7 @@ html, body {
   .performer {
     position: absolute;
     max-height: 9.5vh;
-    transform: translate(-130%, 30%);
+    transform: translate(-130%, 20%);
   }
 
   .performer2 {
