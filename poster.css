@@ -146,14 +146,14 @@ html, body {
     font-size: 3vmin;
     margin-top: 0vh;
     font-weight: bold;
-    line-height: 0.6;
+    line-height: 1;
   }
 
   .act-description {
     font-size: 1.2vmin;
     margin-top: 1vh;
     margin-bottom: 0.5vh;
-    line-height: 1;
+    line-height: 1.2;
   }
   .act-text {
     max-width: 100%;
