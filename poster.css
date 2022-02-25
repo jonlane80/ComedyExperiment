@@ -112,7 +112,7 @@ html, body {
   .performer2 {
     position: absolute;
     max-height: 10vh;
-    transform: translate(-135%, 20%);
+    transform: translate(-127%, 20%);
   }
 
   .flask {
@@ -247,14 +247,14 @@ html, body {
 
   .footer {
     /* display: flex; */
-    margin-top: -10px;
+    /* margin-top: -10px; */
     justify-content: center;
     flex-wrap: wrap;
     flex-basis: 100%;
     clear: both;
     max-width: 100%;
     flex-grow: 1;
-    width: 0;
+    /* width: 0; */
     break-after: always;
   }
 
