@@ -1,6 +1,6 @@
 html, body {
     margin:0px;
-    height: 90%;
+    height: 100%;
     width: 100%;
     font-family: heisei-maru-gothic-std, sans-serif;
     font-style: bold;
@@ -261,6 +261,7 @@ html, body {
     max-width: 100%;
     flex-grow: 1;
     /* width: 0; */
+    height: 110%
     break-after: always;
   }
 
