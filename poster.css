@@ -112,13 +112,13 @@ html, body {
   .performer2 {
     position: absolute;
     max-height: 10vh;
-    transform: translate(-123%, 18%);
+    transform: translate(-121%, 18%);
   }
 
   .performer3 {
     position: absolute;
     max-height: 9.8vh;
-    transform: translate(-123%, 18%);
+    transform: translate(-124%, 19%);
   }
 
   .flask {
