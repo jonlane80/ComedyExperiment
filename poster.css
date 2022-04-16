@@ -127,7 +127,7 @@ html, body {
   .performer {
     position: absolute;
     max-height: 9.5vh;
-    transform: translate(-127%, 20%);
+    transform: translate(-129%, 20%);
   }
 
   .performer1_2 {
@@ -139,7 +139,7 @@ html, body {
   .performer2 {
     position: absolute;
     max-height: 10vh;
-    transform: translate(-123%, 18%);
+    transform: translate(-126%, 18%);
   }
   .performer2_2 {
     position: absolute;
@@ -150,7 +150,7 @@ html, body {
   .performer3 {
     position: absolute;
     max-height: 9.8vh;
-    transform: translate(-123%, 18%);
+    transform: translate(-128%, 18%);
   }
 
   .flask {
