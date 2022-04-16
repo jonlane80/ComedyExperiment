@@ -130,10 +130,21 @@ html, body {
     transform: translate(-127%, 20%);
   }
 
+  .performer1_2 {
+    position: absolute;
+    max-height: 10vh;
+    transform: translate(60%, 110%);
+  }
+
   .performer2 {
     position: absolute;
     max-height: 10vh;
     transform: translate(-123%, 18%);
+  }
+  .performer2_2 {
+    position: absolute;
+    max-height: 10vh;
+    transform: translate(75%, 110%);
   }
 
   .performer3 {
