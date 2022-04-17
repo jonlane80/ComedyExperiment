@@ -121,20 +121,26 @@ html, body {
   }
 
   .kate {
-    margin-left: -15%;
-    margin-top: 70%;
+    margin-left: -35%;
+    margin-top: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
   .joe {
-    margin-left: -17%;
-    margin-top: -22%;
+    margin-left: 135%;
+    margin-top: -50%;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .elaine {
-    margin-left: 15%;
-    margin-top: -10%;
+    margin-left: 270%;
+    margin-top: -50%;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .vertical-align {
@@ -153,18 +159,18 @@ html, body {
   .performer1_2 {
     position: absolute;
     max-height: 10vh;
-    transform: translate(260%, -168%);
+    transform: translate(265%, 10%);
   }
 
   .performer2 {
     position: absolute;
     max-height: 10vh;
-    transform: translate(-0%, 10%);
+    transform: translate(-15%, 10%);
   }
   .performer2_2 {
     position: absolute;
     max-height: 10vh;
-    transform: translate(-2%, 10%);
+    transform: translate(120%, 10%);
   }
 
   .performer3 {
@@ -238,9 +244,9 @@ html, body {
     height: 60%;
   }
 
-  .show-date {
+  /* .show-date {
     margin-top: -28%;
-  }
+  } */
 
   .free-entry {
     margin-top: 1vh;
