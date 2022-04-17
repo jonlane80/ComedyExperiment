@@ -241,7 +241,7 @@ html, body {
     margin-left: 2%;
     margin-top: 3%;
     margin-right: 2%;
-    height: 60%;
+    /* height: 60%; */
   }
 
   /* .show-date {
@@ -249,7 +249,7 @@ html, body {
   } */
 
   .free-entry {
-    margin-top: 1vh;
+    margin-top: 0.5vh;
     /* font-size: clamp(30px, 2vw, 65px); */
     font-size: 2.1vh;
     font-weight: bold;
