@@ -116,6 +116,26 @@ html, body {
     break-after: always;
     flex-basis: 100%;
   }
+  .act2 {
+    height: 25vh;
+  }
+
+  .kate {
+    margin-left: -15%;
+    margin-top: 70%;
+    text-align: center;
+  }
+  .joe {
+    margin-left: -17%;
+    margin-top: -22%;
+    text-align: center;
+  }
+
+  .elaine {
+    margin-left: 15%;
+    margin-top: -10%;
+    text-align: center;
+  }
 
   .vertical-align {
     position: relative;
@@ -133,18 +153,18 @@ html, body {
   .performer1_2 {
     position: absolute;
     max-height: 10vh;
-    transform: translate(60%, 110%);
+    transform: translate(260%, -168%);
   }
 
   .performer2 {
     position: absolute;
     max-height: 10vh;
-    transform: translate(-126%, 18%);
+    transform: translate(-0%, 10%);
   }
   .performer2_2 {
     position: absolute;
     max-height: 10vh;
-    transform: translate(75%, 110%);
+    transform: translate(-2%, 10%);
   }
 
   .performer3 {
@@ -182,7 +202,7 @@ html, body {
 
   .act-name {
     font-size: 3vmin;
-    margin-top: 0vh;
+    /* margin-top: 0vh; */
     font-weight: bold;
     line-height: 1;
   }
@@ -216,6 +236,10 @@ html, body {
     margin-top: 3%;
     margin-right: 2%;
     height: 60%;
+  }
+
+  .show-date {
+    margin-top: -28%;
   }
 
   .free-entry {
