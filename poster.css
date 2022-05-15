@@ -105,19 +105,22 @@ html, body {
 
   .performer1 {
     position: absolute;
-    max-height: 9.5vh;
+    height: 9.5vh;
+    max-height: 19vh;
     transform: translate(-127%, 20%);
   }
 
   .performer2 {
     position: absolute;
-    max-height: 10vh;
+    height: 10vh;
+    max-height: 20vh;
     transform: translate(-121%, 18%);
   }
 
   .performer3 {
     position: absolute;
-    max-height: 9.8vh;
+    height: 9.8vh;
+    max-height: 20vh;
     transform: translate(-124%, 19%);
   }
 
