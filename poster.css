@@ -155,8 +155,15 @@ html, body {
     line-height: 1;
   }
 
+  .generic-description {
+    font-size: 1.7vmin;
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
+    line-height: 1.2;
+  }
+
   .act-description {
-    font-size: 1.2vmin;
+    font-size: 1vmin;
     margin-top: 1vh;
     margin-bottom: 0.5vh;
     line-height: 1.2;
