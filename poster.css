@@ -20,8 +20,10 @@ html, body {
 .banner {
     top: 0;
     left: 0;
-    height: 22%;
-    max-height: 23%;
+    /* height: 22%; */
+    /* max-height: 23%; */
+    height: 30%;
+    max-height: 50%
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -105,21 +107,22 @@ html, body {
 
   .performer1 {
     position: absolute;
-    height: 9.5vh;
+    /* height: 9.5vh; */
+    height: 12vh;
     max-height: 19vh;
-    transform: translate(-137%, 33%);
+    transform: translate(-133%, 25%);
   }
 
   .performer2 {
     position: absolute;
-    height: 10vh;
+    height: 12vh;
     max-height: 20vh;
     transform: translate(-135%, 27%);
   }
 
   .performer3 {
     position: absolute;
-    height: 9.8vh;
+    height: 12vh;
     max-height: 20vh;
     transform: translate(-137%, 27%);
   }
