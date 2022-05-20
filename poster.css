@@ -108,23 +108,27 @@ html, body {
   .performer1 {
     position: absolute;
     /* height: 9.5vh; */
-    height: 12vh;
-    max-height: 19vh;
-    transform: translate(-133%, 25%);
+    /* max-height: 12vh; */
+    max-height: 8vh;
+    transform: translate(-125%, 22%);
   }
 
   .performer2 {
     position: absolute;
-    height: 12vh;
+    /* height: 12vh;
     max-height: 20vh;
-    transform: translate(-135%, 27%);
+    transform: translate(-135%, 27%); */
+    max-height: 8vh;
+    transform: translate(-125%, 22%);
   }
 
   .performer3 {
     position: absolute;
-    height: 12vh;
+    /* height: 12vh;
     max-height: 20vh;
-    transform: translate(-137%, 27%);
+    transform: translate(-137%, 27%); */
+    max-height: 8vh;
+    transform: translate(-125%, 22%);
   }
 
   .flask {
