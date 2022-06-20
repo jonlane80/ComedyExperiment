@@ -113,7 +113,13 @@
                 var doc = document.querySelector(".poster");
                 doc.ownerDocument.defaultView.innerWidth = doc.clientWidth;
                 doc.ownerDocument.defaultView.innerHeight = doc.clientHeight;
-                html2canvas(doc).then(canvas => {
+                html2canvas(doc, {
+                    allowTaint: false,
+                    windowWidth: 1000,
+                    windowHeight: 1000,
+                    scrollX: -window.scrollX,
+                    scrollY: -window.scrollY,
+                    }).then(canvas => {
                     var smallImageUrl = canvas.toDataURL("image/png")
                     var smallImage = window.open(smallImageUrl, "Small Poster")
                     smallImage.document.write ('<title>Small Size Image</title><img src=' + smallImageUrl + ' alt="small poster">' );
