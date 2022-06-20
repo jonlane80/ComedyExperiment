@@ -298,7 +298,7 @@ html, body {
     justify-content: center;
     flex-grow: 1;
     /* width: 0; */
-    height: 5%;
+    height: 50%;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(195,236,255,1) 0%, rgba(129,214,252,1) 100%); 
     width: 100%;
     z-index: 1;
