@@ -120,7 +120,7 @@
                             var smallImage = window.open(smallImageUrl, "Small Poster")
                             smallImage.document.write ('<title>Small Size Image</title><img src=' + smallImageUrl + ' alt="small poster">' );
                         }
-                    })
+                    }).catch (error => console.log("Error: " + error));
                         // allowTaint: false,
                         // // windowWidth: 1000,
                         // // windowHeight: 1000,
