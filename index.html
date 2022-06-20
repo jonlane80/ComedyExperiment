@@ -113,7 +113,7 @@
                 var doc = document.querySelector(".poster");
                 doc.ownerDocument.defaultView.innerWidth = doc.clientWidth;
                 doc.ownerDocument.defaultView.innerHeight = doc.clientHeight;
-                html2canvas(document.querySelector(".poster"),
+                html2canvas(doc,
                     {
                         onrendered: function (canvas) {
                             var smallImageUrl = canvas.toDataURL("image/png")
