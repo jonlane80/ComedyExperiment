@@ -91,7 +91,7 @@ html, body {
   }
 
   .acts {
-    height: 33%;
+    height: 27%;
     clear: both;
     position: relative; 
     width: 100%;
@@ -100,6 +100,7 @@ html, body {
     width: 0;
     break-after: always;
     flex-basis: 100%;
+    margin-bottom: -40px;
   }
 
   .vertical-align {
@@ -294,6 +295,7 @@ html, body {
     /* width: 0; */
     height: 10%;
     z-index: 100;
+    position: relative;
   }
   .footer2 {
     /* display: flex; */
@@ -304,6 +306,8 @@ html, body {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(195,236,255,1) 0%, rgba(129,214,252,1) 100%); 
     width: 100%;
     z-index: 1;
+    margin-top: -42px;
+    position: relative;
   }
 
   .qrcodeCanvas {

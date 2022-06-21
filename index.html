@@ -111,8 +111,9 @@
         <script>
             document.getElementById("smallPoster").onclick = function () { 
                 var doc = document.querySelector(".poster");
-                doc.ownerDocument.defaultView.innerWidth = doc.clientWidth;
-                doc.ownerDocument.defaultView.innerHeight = doc.clientHeight;
+                // doc.ownerDocument.defaultView.innerWidth = doc.clientWidth;
+                // doc.ownerDocument.defaultView.innerHeight = doc.clientHeight;
+                window.scrollTo(0,0);
                 html2canvas(doc, {
                     allowTaint: false,
                     windowWidth: 1000,
