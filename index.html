@@ -24,6 +24,9 @@
                     <div class="logo-wrapper">
                         <img class="logo-img" src="images/logoWithText.png"/>
                     </div>
+                    <div class="fringe-banner">
+                        <img class="fringe-img" src="images/edinburgh_fringe_banner.png" alt="Edinburgh Fringe Special"/>
+                    </div>
                 </div>
             <div class="poster-body">
                 <div class="act1 acts">
@@ -32,8 +35,8 @@
                     <img class="performer performer1" src="images/headliner.png"/>
                     <div class="act-text-block">
                         <div class="act-type act-text">Headliner</div>
-                        <div class="act-name act-text">Elliot Steel</div>
-                        <div class="act-description act-text">As seen on TV on Comedy Central's 'Roast Battle' and 'Live from The Comedy Store'</div>
+                        <div class="act-name act-text">Jess Robinson</div>
+                        <div class="act-description act-text">Multi-award winning star of TVs Spitting Image previews her Edinburgh show 'Legacy'</div>
                     </div>
                     <div class="show-info">
                         <div class="free-entry">Free Entry</div>
@@ -43,15 +46,15 @@
                 <div class="act2 acts">
                     <span class="vertical-align"></span>
                     <img class="pink-flask flask" src="images/blue_flask.png"/>
-                    <img class="performer performer2" src="images/host.png"/>
+                    <img class="performer performer2" src="images/host-Alicia.png"/>
                     <div class="act-text-block">
                         <div class="act-type act-text">Host</div>
-                        <div class="act-name act-text">Martin Warren</div>
-                        <div class="act-description act-text">The Comedy Experiments resident MC</div>
+                        <div class="act-name act-text">Alicia Davison</div>
+                        <div class="act-description act-text">Brighton's newest MC on the block!</div>
                     </div>
                     <div class="show-date show-info">
                         <div class="show-day">Saturday</div>
-                        <div class="perf-date">9th April '22</div>
+                        <div class="perf-date">23rd July '22</div>
                         <div class="doors-open">Doors open at 15:45</div>
                         <div class="show-starts">Show starts at 16:00</div>
                     </div>
@@ -62,8 +65,8 @@
                     <img class="performer performer3" src="images/opener.png" />
                     <div class="act-text-block">
                         <div class="act-type act-text">Opener</div>
-                        <div class="act-name act-text">Nik Coppin</div>
-                        <div class="act-description act-text">'Likeable and refreshingly uncynical' - Chortle</div>
+                        <div class="act-name act-text">Anna Morris</div>
+                        <div class="act-description act-text">As seeon on BBC 1 Outnumbered</div>
                     </div>
                     <div class="show-address show-info">
                         <div class="addr-line">Caroline of Brunswick</div>
@@ -82,7 +85,7 @@
             </div>
         </div>
         <script>
-            var ticketLink = "https://thecomedyeperimentapr.eventbrite.co.uk"
+            var ticketLink = "https://thecomedyexperimentjuly.eventbrite.co.uk"
             jQuery(".qrcodeCanvas").kjua({
                 text: ticketLink,
                 render: 'image',
@@ -97,8 +100,9 @@
                 html2canvas(document.querySelector(".poster"),
                     {
                         allowTaint: false,
-                        windowWidth: 8000,
-                        windowHeight: 8000,
+                        //usually need to adjust the finished image to fit the A3 size
+                        windowWidth: 3508,
+                        windowHeight: 4961,
                         scrollX: -window.scrollX,
                         scrollY: -window.scrollY,
                     }).then(canvas => {

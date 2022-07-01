@@ -70,6 +70,32 @@ html, body {
     margin-right: auto;
     object-fit: contain;
 }
+.fringe-banner{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-height: 100%;
+  float: left;
+  transform: translate(-165%, -56%);
+  display: block;
+  max-width: 100%;
+  height: 20%;
+}
+.fringe-img{
+  top: 50%;
+  /* height: auto;
+  width: auto; */
+  display: inline-block;
+  /* margin: auto; */
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  position: relative;
+  transform: translateY(-45%);
+  height: 100%;
+  left: 113%;
+  position: relative;
+}
   
   .act1 {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,245,175,1) 0%, rgba(255,194,0,1) 100%); 
@@ -109,11 +135,11 @@ html, body {
 
   .performer1 {
     position: absolute;
-    height: 11vh;
+    height: 10vh;
     max-height: 12vh;
     /* height: 8vh; */
     /* max-height: 12vh; */
-    transform: translate(-120%, 11%);
+    transform: translate(-125%, 20%);
   }
 
   .performer2 {
@@ -130,7 +156,7 @@ html, body {
     position: absolute;
     height: 9.5vh;
     max-height: 20vh;
-    transform: translate(-130%, 25%);
+    transform: translate(-128%, 20%);
     /* height: 8vh;
     max-height: 20vh;
     transform: translate(-125%, 22%); */
